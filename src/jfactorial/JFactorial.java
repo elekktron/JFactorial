@@ -50,15 +50,13 @@ public class JFactorial {
 		int x = n;
 		BigInteger fact = BigInteger.valueOf(n);
 		fact = factorial(n);
-		System.out.print(n + "! ");
-		if (n == 0) System.out.println(newLine + "The factorial of 0 is 1.");
+		if (n == 0) System.out.println("The value for the 0! is 1.");
 		else {
 			for ( int p = n; p > 0; ) {
 				p = n - 1;
-				System.out.print(p + "! ");
 				n = n - 1;
 			}
-		System.out.println(newLine + newLine + "The factorial for the number " + x + " is " + fact + ".");
+		System.out.println(newLine + "The value for the " + x + "!" + " is " + fact + ".");
 		}
 		}
 	}
